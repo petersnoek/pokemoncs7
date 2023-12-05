@@ -10,6 +10,7 @@ while (name != "quit")
 {
     Console.Write("Enter new name for Charmander (type 'quit' to exit): ");
     name = Console.ReadLine();
+    if (name == null) break;
     if (name.ToUpper() == "QUIT") break;
     if (name.Length > 0)
     {
